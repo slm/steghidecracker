@@ -3,6 +3,6 @@
 Steghide dictionary attack tool with python
 
 Usage :
-'''sh
+```sh
 python steghidecracker.py [stegfile] [wordlist]
-'''
+```

@@ -23,7 +23,7 @@ def main():
     i = 1;
     for line in wordlist:
         remaining = length - i
-        output = commands.getoutput("steghide extract -sf " + filename.strip() + " -p " + line.strip())
+        output = commands.getoutput("steghide extract -sf " + filename.strip() + " -p '" + line.strip()+"'")
         if output.find("could not extract") == -1:
             print("FOUND!!!!!!=> " + line)
             print(output)
